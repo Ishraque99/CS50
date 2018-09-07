@@ -1,2 +1,2 @@
 # CS50
-Problem Sets for Harvard University's CS50x course.
+Solution sets for Harvard University's CS50x course by Ishraque Zahin
