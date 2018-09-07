@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table style="width:100%">
+        <tr>
+            <th> Symbol </th>
+            <th> Units </th>
+            <th> Unit Price </th>
+            <th> Total </th>
+        </tr>
+        {% for i in pfl %}
+        <tr>
+            <td>{{ i.symbol }}</td>
+            <td>{{ i.units }}</td>
+            <td>{{ i.price }}</td>
+            <td>{{ i.totalvalue }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <b>
+        Funds Available: {{ cash }}
+    </b>
+    <b>
+        Total Assets: {{ totalsum }}
+    </b>
+    
+{% endblock %}

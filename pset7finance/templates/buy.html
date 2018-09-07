@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('buy') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Stock Symbol" type="text"/>
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="sharen" placeholder="Number of Shares" type="text"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Buy</button>
+            </div>
+        </fieldset>
+    </form>
+    <p>
+        Share name: {{ quote.name }}</p>
+        <p>
+        Share symbol: {{ quote.symbol }}
+        </p>
+        <p>
+        Share price: {{ quote.price }}
+        </p>
+        <p>
+            Total Value: {{ n }} x {{ quote.price }} = {{ totalprice }}
+        </p>
+        <p>
+            Funds Available: {{ cash }} 
+        </p>
+    
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Change Password
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('cngpss') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="currentpass" placeholder="Current Password" type="password"/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="newpass" placeholder=" New Password" type="password"/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="newpass2" placeholder="Retype New Password" type="password"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Submit Changes</button>
+            </div>
+        </fieldset>
+    </form>
+    <b>
+        {{ msg }}
+    </b>
+{% endblock %}
