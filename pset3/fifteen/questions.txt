@@ -1,0 +1,4 @@
+0. allows square dimensions between side lengths of sizes 3 to 9 inclusive.
+1. game board is represented by a 2D array.
+2. greet() function, which is defined as a clear() fucntion followed by a printf() function.
+3. need to implement init(), draw(), move(), and won() functions.

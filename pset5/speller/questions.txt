@@ -1,0 +1,7 @@
+0.  a very long word
+1.  returns the system usage for a particular process.
+2.  16
+3.  because copying the values would cost more memory and hence system resources, consequently affecting the running time.
+4.  c = fgetc(fp) gets a char from the open file. it's then checked whether it's an alphabet, or apostrophe, and added to an array. if the array exceeds LENGTH it simply ignores and moves on, and resets array index to 0. Similarly, if it detects a digit, it sets index to 0, effectively ignoreing digits. The rest of it is just adding characters to the word array, and crossing checking with "check" function.
+5.  if there's punctuation, like commas, fscanf would pick those up too, along with the word before it, thereby causing the check function to return false, since no word ends  with commas in the dictionary.
+6.  To prevent changes made to the data being pointed at.

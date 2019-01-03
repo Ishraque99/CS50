@@ -1,0 +1,12 @@
+1.  stdint.h is the header file that declares some integers of a specific width.
+2.  to specify the size of each data type. Also, unsigned int (e.g uint8_t) ensures that the integer is positive only.
+3.  BYTE is 1 byte, DWORD is 4 bytes, LONG is 4 bytes, WORD is 2 bytes.
+4.  first two bytes contains the WORD bfType, "424df6" in hexadecimal, and "BM" in ASCII.
+5.  bfSize specifees the size of the bitmap file on disk, biSize is the size of the info header.
+6.  the image is upside down compared to a conventional bitmap?
+7.  biBitCount
+8.  if the file doesn't exist, it can't open and returns NULL
+9.  because we take the size of the entire BITMAPINFOHEADER, and we need to read only that once. hence quantity is 1. 
+10. 3
+11. moves to a specific memory adress in a file.
+12. SEEK_CUR denotes the currently read position of the file?
